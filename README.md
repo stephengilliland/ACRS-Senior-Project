@@ -1,2 +1,2 @@
 # SeniorProject
-EET CALU Senior Project
+IIC connected sensor system for water chemical regulation
