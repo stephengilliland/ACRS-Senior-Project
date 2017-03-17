@@ -23,6 +23,7 @@ Slave devices | ATMega328
 The project is programmed in C++ using the arduino environment.
 
 ### The App
+App example
 
 ## Pictures/Videos
 Put pictures and videos here.
