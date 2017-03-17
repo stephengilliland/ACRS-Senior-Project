@@ -14,10 +14,10 @@ The main goal of the system is modularity; meaning any of our sensors connected 
 
 The project utilizes multiple Microprocessors, one of which acts as a I2C Master, the rest are attached to the sensors and act as Slave devices. The master is a difference processor due to the need of more program space. The other device's programs are minimal thus they do not need much space.
 
-Device | MicroController Used
------------- | -------------
-Master device | ATMega2560
-Slave devices | ATMega328
+Device | MicroController Used | Program Space | SRAM
+------------ | ------------- | ------- | ----- 
+Master device | ATmega2560 | 256KB | 8KB
+Slave devices | ATmega328 | 32KB | 2KB
 
 ## Software
 The project is programmed in C++ using the arduino environment.
