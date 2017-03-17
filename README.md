@@ -1,6 +1,6 @@
 # Aquatic Chemical Regulation System (ACRS)
 
-###### Group Members:
+#### Group Members:
 - Stephen Gilliland
 - Nicholas Zugates
 - George Tittnitch
