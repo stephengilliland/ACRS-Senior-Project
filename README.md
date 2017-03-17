@@ -6,7 +6,7 @@
 - George Tittnitch
 
 ## What is ACRS?
-A water chemical regulation system which uses various sensors connected via I2C bus to take measurements of chemical content, temperature, pH and turbidity. These readings are used in order to make adjustments to the balance of chemicals in the water. The system is interfaced to the user via an Android App. The readings aquired by the system are logged in a microSD card for recordkeeping purposes.
+A water chemical regulation system which uses various sensors connected via I2C bus to take measurements of chemical content, temperature, pH and turbidity. These readings are used in order to make adjustments to the balance of chemicals in the water. The system is interfaced to the user via an Android app. The readings aquired by the system are logged in a microSD card for recordkeeping purposes.
 
 The main goal of the system is modularity; meaning any of our sensors connected to the controller I2C bus will be automatically recognized and read.  
 
@@ -21,6 +21,8 @@ Slave devices | ATMega328
 
 ## Software
 The project is programmed in C++ using the arduino environment.
+
+### The App
 
 ## Pictures/Videos
 Put pictures and videos here.
