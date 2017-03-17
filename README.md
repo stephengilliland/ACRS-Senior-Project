@@ -20,7 +20,7 @@ Master device | ATMega2560
 Slave devices | ATMega328
 
 ## Software
-Insert code here
+The project is programmed in C++ using the arduino environment.
 
 ## Pictures/Videos
 Put pictures and videos here.
