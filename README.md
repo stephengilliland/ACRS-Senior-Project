@@ -10,7 +10,10 @@ A water chemical regulation system which uses various sensors connected via I2C 
 
 The main goal of the system is modularity; meaning any of our sensors connected to the controller I2C bus will be automatically recognized and read.  
 
-## Code
+## Hardware
+Insert Hardware info here
+
+## Software
 Insert code here
 
 ## Pictures/Videos
