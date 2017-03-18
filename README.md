@@ -24,6 +24,9 @@ Slave devices | ATmega328 | 32KB | 2KB
 ## Software
 The project is programmed in C++ using the arduino programming environment.
 
+### The Controller
+Controller code
+
 ### The App
 App example
 
