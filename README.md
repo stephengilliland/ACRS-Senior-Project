@@ -27,6 +27,7 @@ The project is programmed in C++ using the arduino programming environment.
 ### The Controller
 Controller code Overview
 
+### Sensors
 Sensor code Overview
 
 ### The App
