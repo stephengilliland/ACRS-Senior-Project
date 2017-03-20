@@ -1,4 +1,4 @@
-update=3/19/2017 10:01:23 PM
+update=3/19/2017 9:53:19 PM
 version=1
 last_client=kicad
 [pcbnew]
@@ -38,3 +38,6 @@ LibName6=linear
 LibName7=regul
 LibName8=74xx
 LibName9=cmos4000
+LibName10=adc-dac
+LibName11=memory
+LibName12=xilinx

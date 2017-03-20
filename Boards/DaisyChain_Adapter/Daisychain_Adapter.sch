@@ -1,4 +1,5 @@
 EESchema Schematic File Version 2
+LIBS:DougsSch
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -7,27 +8,7 @@ LIBS:linear
 LIBS:regul
 LIBS:74xx
 LIBS:cmos4000
-LIBS:adc-dac
-LIBS:memory
-LIBS:xilinx
-LIBS:microcontrollers
-LIBS:dsp
-LIBS:microchip
-LIBS:analog_switches
-LIBS:motorola
-LIBS:texas
-LIBS:intel
-LIBS:audio
-LIBS:interface
-LIBS:digital-audio
-LIBS:philips
-LIBS:display
-LIBS:cypress
-LIBS:siliconi
-LIBS:opto
-LIBS:atmel
-LIBS:contrib
-LIBS:valves
+LIBS:Daisychain_Adapter-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
@@ -48,7 +29,7 @@ U 1 1 58C5AAFB
 P 4550 3200
 F 0 "P1" H 4550 3500 50  0000 C CNN
 F 1 "CONN_01X05" V 4650 3200 50  0000 C CNN
-F 2 "" H 4550 3200 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x05_Pitch2.54mm" H 4550 3200 50  0000 C CNN
 F 3 "" H 4550 3200 50  0000 C CNN
 	1    4550 3200
 	1    0    0    -1  
@@ -59,7 +40,7 @@ U 1 1 58C5ABA9
 P 5150 3200
 F 0 "P2" H 5150 3500 50  0000 C CNN
 F 1 "CONN_01X05" V 5250 3200 50  0000 C CNN
-F 2 "" H 5150 3200 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x05_Pitch2.54mm" H 5150 3200 50  0000 C CNN
 F 3 "" H 5150 3200 50  0000 C CNN
 	1    5150 3200
 	1    0    0    -1  
@@ -70,7 +51,7 @@ U 1 1 58C5ABF0
 P 5900 3200
 F 0 "P3" H 5900 3500 50  0000 C CNN
 F 1 "CONN_01X05" V 6000 3200 50  0000 C CNN
-F 2 "" H 5900 3200 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x05_Pitch2.54mm" H 5900 3200 50  0000 C CNN
 F 3 "" H 5900 3200 50  0000 C CNN
 	1    5900 3200
 	1    0    0    -1  
@@ -92,4 +73,26 @@ Wire Wire Line
 Connection ~ 5000 3200
 Connection ~ 4950 3300
 Connection ~ 4950 3400
+$Comp
+L MTG_HOLE MTG3
+U 1 1 58CF3A4B
+P 5650 4300
+F 0 "MTG3" H 5650 4400 60  0000 C CNN
+F 1 "MTG_HOLE" H 5650 4200 60  0000 C CNN
+F 2 "LandBoards_MountHoles:MTG-4-40-SMALL" H 5650 4300 60  0000 C CNN
+F 3 "" H 5650 4300 60  0000 C CNN
+	1    5650 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L MTG_HOLE MTG2
+U 1 1 58CF3BDC
+P 5250 4300
+F 0 "MTG2" H 5250 4400 60  0000 C CNN
+F 1 "MTG_HOLE" H 5250 4200 60  0000 C CNN
+F 2 "LandBoards_MountHoles:MTG-4-40-SMALL" H 5250 4300 60  0000 C CNN
+F 3 "" H 5250 4300 60  0000 C CNN
+	1    5250 4300
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
