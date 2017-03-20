@@ -21,7 +21,7 @@ Master device | ATmega2560 | 256KB | 8KB
 Slave devices | ATmega328 | 32KB | 2KB
 
 ![Image of Main Board](https://github.com/stephengilliland/ACRS-Senior-Project/blob/master/Boards/SP1/BoardLayoutPIC.JPG)
-![Image of Main Boar2](https://github.com/stephengilliland/ACRS-Senior-Project/blob/master/Boards/SP1/image.JPG)
+![Image of Main Boar2](https://github.com/stephengilliland/ACRS-Senior-Project/blob/master/Boards/SP1/Image.JPG)
 
 
 ## Software
