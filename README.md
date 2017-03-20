@@ -20,6 +20,8 @@ Device | MicroController Used | Program Space | SRAM
 Master device | ATmega2560 | 256KB | 8KB
 Slave devices | ATmega328 | 32KB | 2KB
 
+![Image of Main Board](https://stephengilliland.github.com/ACRS-Senior-Project/Boards/BoardLayoutPIC.jpg)
+
 
 ## Software
 The project is programmed in C++ using the arduino programming environment.
