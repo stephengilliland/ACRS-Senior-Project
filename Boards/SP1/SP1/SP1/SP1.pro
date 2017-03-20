@@ -1,0 +1,43 @@
+update=3/18/2017 3:53:41 PM
+version=1
+last_client=kicad
+[pcbnew]
+version=1
+LastNetListRead=
+UseCmpFile=1
+PadDrill=0.600000000000
+PadDrillOvalY=0.600000000000
+PadSizeH=1.500000000000
+PadSizeV=1.500000000000
+PcbTextSizeV=1.500000000000
+PcbTextSizeH=1.500000000000
+PcbTextThickness=0.300000000000
+ModuleTextSizeV=1.000000000000
+ModuleTextSizeH=1.000000000000
+ModuleTextSizeThickness=0.150000000000
+SolderMaskClearance=0.000000000000
+SolderMaskMinWidth=0.000000000000
+DrawSegmentWidth=0.200000000000
+BoardOutlineThickness=0.100000000000
+ModuleOutlineThickness=0.150000000000
+[cvpcb]
+version=1
+NetIExt=net
+[general]
+version=1
+[eeschema]
+version=1
+LibDir=../../../../../Stephen's Boards/KiCAD/Library
+[eeschema/libraries]
+LibName1=C:/Users/Stephen/Documents/GitHub/Stephen's Boards/KiCAD/Library/DougsSch
+LibName2=power
+LibName3=device
+LibName4=transistors
+LibName5=conn
+LibName6=linear
+LibName7=regul
+LibName8=interface
+LibName9=atmel
+LibName10=contrib
+LibName11=74xx
+LibName12=cmos4000
