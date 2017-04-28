@@ -32,6 +32,7 @@ Because of the large number of devices the controller needed to interface with, 
 
 
 ![Image of Main Board](https://github.com/stephengilliland/ACRS-Senior-Project/blob/master/Boards/SP1/BoardLayoutPIC.JPG)
+
 ![Image of Main Boar2](https://github.com/stephengilliland/ACRS-Senior-Project/blob/master/Boards/SP1/Image.JPG)
 
 
