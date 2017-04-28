@@ -29,7 +29,16 @@ Slave devices | ATmega328 | 32KB | 2KB
 The project is programmed in C++ using the arduino programming environment.
 
 ### The Controller
-Controller code Overview
+The device chosen for this for the main controller is the Atmega2560. The Atmega2560 is an 8-bit microcontroller that is well suited for the application. There are many reasons that this controller was the right one for the application: it’s an Arduino compatible processor, it has the serial peripherals needed to communicate to the necessary devices, and it has enough memory space to hold the large main program. 
+
+Arduino compatibility is a very beneficial advantage due to the large amount of libraries and support that are available. Arduino also has a very convenient windows application for writing code, compilation, and uploading. The controller also needed a number of serial peripherals in order to communicate to the necessary devices such as: UART for communication to the bluetooth chip (RN-42) , I2C in order to get sensor values, and SPI to write to the microSD card for data logging purposes.
+
+Because of the large number of devices the controller needed to interface with, a PCB was created which contains most of the needed devices and supporting circuitry. Included in the controller PCB are: the controller (Atmega2560), voltage regulators (3.3V and 5V), a microSD slot with supporting level-translators, and a 12DC input power jack.
+
+### Data Logging
+Data is logged to a microSD card using the SPI interface of the Atmega2560, with every set of values that are logged, a timestamp is also logged in order to give the user a record of data along with the date and time of the measurements.  An example of a data entry is as follows: 
+
+“4/23/2017 20:23:59  pH=7.1  Temp=71.23  Chlorine=2.23  Trepidity=95”
 
 ### Sensors
 Sensor code Overview
