@@ -31,7 +31,7 @@ Arduino compatibility is a very beneficial advantage due to the large amount of 
 Because of the large number of devices the controller needed to interface with, a PCB was created which contains most of the needed devices and supporting circuitry. Included in the controller PCB are: the controller (Atmega2560), voltage regulators (3.3V and 5V), a microSD slot with supporting level-translators, and a 12DC input power jack.
 
 
-![Image of Main Board](https://github.com/stephengilliland/ACRS-Senior-Project/blob/master/Boards/SP1/BoardLayoutPIC.JPG)
+![Image of Main Board](https://github.com/stephengilliland/ACRS-Senior-Project/Boards/SP1/BoardLayoutPIC.JPG)
 
 ### Data Logging
 Data is logged to a microSD card using the SPI interface of the Atmega2560, with every set of values that are logged, a timestamp is also logged in order to give the user a record of data along with the date and time of the measurements.  An example of a data entry is as follows: 
