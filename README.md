@@ -33,9 +33,6 @@ Because of the large number of devices the controller needed to interface with, 
 
 ![Image of Main Board](https://github.com/stephengilliland/ACRS-Senior-Project/blob/master/Boards/SP1/BoardLayoutPIC.JPG)
 
-![Image of Main Boar2](https://github.com/stephengilliland/ACRS-Senior-Project/blob/master/Boards/SP1/Image.JPG)
-
-
 ### Data Logging
 Data is logged to a microSD card using the SPI interface of the Atmega2560, with every set of values that are logged, a timestamp is also logged in order to give the user a record of data along with the date and time of the measurements.  An example of a data entry is as follows: 
 
