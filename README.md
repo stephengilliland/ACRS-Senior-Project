@@ -13,7 +13,7 @@ The main goal of the system is modularity; meaning any of our sensors connected 
 
 ## Hardware
 
-The project utilizes multiple microprocessors, one of which acts as a I2C Master(Main Controller), the rest are attached to the sensors and act as Slave devices(Sensors). The master is a difference processor due to the need of more program space. The other device's programs are minimal thus they do not need much space.
+The project utilizes multiple microprocessors, one of which acts as a I2C Master(Main Controller), the rest are attached to the sensors and act as Slave devices(Sensors). The master is a different processor due to the need of more program space. The other device's programs are minimal thus they do not need much space.
 
 Device | MicroController Used | Program Space | SRAM
 ------------ | ------------- | ------- | ----- 
