@@ -21,7 +21,26 @@ Master device | ATmega2560 | 256KB | 8KB
 Slave devices | ATmega328 | 32KB | 2KB
 
 ## Software
-The project is programmed in C++ using the arduino programming environment.
+The software for the main controller is an large part of ACRS due to the many functions of the diverse system and the number of sensors that can be used with it.  Some of the functions include: Reading sensors, app communication, timekeeping, data logging, and pump control. Due to the ability to customize these things from the app, the program is extensive.
+
+The initial setup of the program initializes variables, outputs, and some of the devices hooked up to the controller. It also sets up the bluetooth parameters. It then searches for connected sensors by testing every possible I2C address (1 to 128, 0 is the controller) and saving the addresses of the devices connected into an array. The array is used to increment through all sensor’s addresses and get their values. This is done by requesting 2 bytes, the first is the sensor type and the second is the data from that sensor. The controller then saves the data into the correct variable based on what sensor was just read. This process is done for every sensor connected every time the program runs the read sensors function. 
+
+The main loop of the program works in response to commands received from the smartphone app, these commands trigger specific actions in the controller such as: setting user settings or sending data to the app. The commands are sent as 1 character numbers and interpreted by the controller. There are 6 different commands the controller can receive from the app, they are as follows:
+
+Set dispense mode: Automatic
+Set dispense mode: Manual
+Get Sensor readings
+Dispense chemicals (if set to manual)
+Change pool size
+Change measurement interval
+
+Changing the dispense mode to automatic simply changes the controller mode to dispense chemicals on it’s own when the readings are out of a preset tolerance. While when set to manual mode, the controller will not do anything until the user sends the command to do so.
+
+A command to get new sensor readings makes the controller send the most recent measurements. As soon is this request is made, a string is sent over bluetooth containing the sensor values. The string is parsed and the values are displayed by the app. 
+
+A dispense chemicals command causes the controller to make calculations based on the user entered pool size, chemical measurements, and desired chemical content. It then sends data to the dispensing controller which takes the necessary action in order to regulate the chemical content of the water. This command is only used if the dispensing setting is set to manual.
+
+The last two commands simply set some preferences. Set pool size sets the size of the body of water being regulated, this is important due to the calculations that are done before dispensing chemicals being dependant on this data. The second preference is the test interval, this preference is the amount of time (in minutes) between each chemical test, because data is logged every time sensor readings are gathered; this also sets the data logging interval.
 
 ### The Controller
 The device chosen for this for the main controller is the Atmega2560. The Atmega2560 is an 8-bit microcontroller that is well suited for the application. There are many reasons that this controller was the right one for the application: it’s an Arduino compatible processor, it has the serial peripherals needed to communicate to the necessary devices, and it has enough memory space to hold the large main program. 
