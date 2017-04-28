@@ -39,10 +39,18 @@ Data is logged to a microSD card using the SPI interface of the Atmega2560, with
 “4/23/2017 20:23:59  pH=7.1  Temp=71.23  Chlorine=2.23  Trepidity=95”
 
 ### Sensors
-Sensor code Overview
+The system begins with the three modular sensors collecting data from the water that is pulled through the system. These sensors each have a dedicated microcontroller that continually take measurements of the sensor values and send these values to the main controller upon request. The first sensor that the water passes over is the chlorine sensor. The design of the chlorine sensor is as followed. The base for the sensor is the TSL235R-LF light intensity to frequency converter. Its purpose is to collect light within the enclosure into which the water will be pumped. The light source is for the sensor is an LED that is mounted in a tube in order to direct the light through the water directly onto the sensors photodiode. The other key element in making this sensor work is the DPD chemical that is added through the top of the sensors container. This substance changes the color of the water to a purple hugh based off of the amount of free chlorine present in it. Now, once the DPD is added and the water changes color, the purple color blocks some of the light to the sensor. So, in order for this sensor to give relevant data, a correlation between the outputted frequency and the amount of chlorine needed to be made. This was done by utilizing the pool test kit described earlier. A sample of water was taken from the source and used in the pool test kit which would give a value between 1 and 5 parts per million. At the same time the same water source that the sample for the pool test kit was taken from was run through the sensor and the DPD was applied. Thus, the frequency that was outputted would correlate with the results given from the pool test kit (10KHZ = 2ppm for example).  
+    
+The pH sensor works similar to an amperometric sensor listed above. The main difference being that there is a plastic shield over the electrodes. The sensor compares the water passing over it to a controlled water sample stored in the sensor. The sensor outputs an analog signal that correlates to the pH level. This was done by using a sample of distilled water and adding pH packets  that were provided with the sensor. These packets, when mixed with distilled water, create a solution of known pH level. This was how the sensor calibration was performed. An example of this would be if a pH 4 packet was added whatever analog signal was outputted is the signal for a pH of 4. 
+
+Finally, the turbidity sensor senses the clearness of the water. This a key test in water quality and even though it does not necessarily fit into the proof of concept, it is a perfect example of how the The A.C.R.S. is adaptable to multiple scenarios. The same goes for the temperature sensor, they are simply helpful for the user to have and show the future possibilities of the project. 
 
 ### The App
-App example
+In order to give the user the most personal experience with the A.C.R.S. system, a user interface was developed in the form of an Android application.  This medium was chosen because in the current day and age it is most convenient for the everyday pool owner.  The app is easy to download, sync to the main system via Bluetooth, control, and monitor.
+
+There are many programs on the market that can be used for Android application development. After experimentation with Android Studio, it was decided that another option was needed.  Further research concluded that MIT App Inventor 2 was the best option for the A.C.R.S. project purposes.
+
+Upon further development the application could be altered and formatted for tablets and other personal devices.  As of now, the application is designed specifically for smartphones.
 
 ## Pictures/Videos
 Put pictures and videos here.
