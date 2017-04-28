@@ -52,4 +52,4 @@ Put pictures and videos here.
 ## Resumes
 - [Stephen Gilliland](./Resumes/SGilliland_Resume.pdf)
 - [Nicholas Zugates](./Resumes/N_ZugatesResume.pdf)
-- [George Tittnich](./Resumes/GeogreResume.pdf)
+- [George Tittnich](./Resumes/George Tittnich Resume.pdf)
